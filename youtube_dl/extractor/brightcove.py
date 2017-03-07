@@ -193,7 +193,7 @@ class BrightcoveLegacyIE(InfoExtractor):
         if videoPlayer is not None:
             if isinstance(videoPlayer, list):
                 videoPlayer = videoPlayer[0]
-            if not (videoPlayer.isdigit() or videoPlayer.startswith('ref:')):
+            if not (videoPlayer.isdigit() or videoPlayer.startswith('ref:') or videoPlayer.count('-') == 4):
                 return None
             params['@videoPlayer'] = videoPlayer
         linkBase = find_param('linkBaseURL')
