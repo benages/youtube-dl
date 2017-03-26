@@ -271,7 +271,10 @@ from .discoverygo import (
     DiscoveryGoIE,
     DiscoveryGoPlaylistIE,
 )
-from .discoverynetworks import DiscoveryNetworksDeIE
+from .discoverynetworks import (
+    DiscoveryNetworksDeIE,
+    DiscoveryNetworksEsIE,
+)
 from .disney import DisneyIE
 from .dispeak import DigitallySpeakingIE
 from .dropbox import DropboxIE
